@@ -69,7 +69,8 @@ Algorithm:
 4. Find its Successors Or neighbors and Check whether the node is visited or not. 
 5. If Not Visited, add it to the Queue. Else Continue. 
 6. Iterate steps 4 and 5 until all nodes get visited, and there are no more unvisited nodes. 
-Program: 
+Program:
+```python
 from collections import deque 
 from collections import defaultdict 
 ''' 
@@ -111,14 +112,32 @@ start = '0'
 path = [] 
 visited = defaultdict(bool) 
 traversedpath = bfs(graph,start,visited,path) 
-print(traversedpath) 
+print(traversedpath)
+```
+---
+
 Sample Input : 
+
 5 6 
-0 1 
-0 2 
-1 2 
-1 3 
+
+0 1
+
+0 2
+
+1 2
+
+1 3
+
 2 4 
+
 3 4 
+
+---
+
 Sample Output: 
 ['0', '1', '2', '3', '4'] 
+
+---
+# Result:
+
+Thus,a Graph was constructed and implementation of Breadth First Search for the same graph was done successfully.
